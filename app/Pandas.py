@@ -1,8 +1,4 @@
-from fastapi import Response
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from io import BytesIO
 import os
 
 #Consulta 1 (Top Palabras más usadas)
