@@ -18,7 +18,7 @@ def get_TopPalabras(TOP):
 def get_TopPeoresPeliculas(TOP):
     movie=pd.read_csv(os.path.join("/app/databasestar/movie.csv"))
     
-    top_peores = movie.sort_values('popularity', ascending=False).head(TOP)
+    top_peores = movie.sort_values('popularity', ascending=True).head(TOP)
     top_peores.rename(columns={'title': 'Pelicula'}, inplace=True)
     top_peores.rename(columns={'popularity': 'Popularidad'}, inplace=True)
 
